@@ -1,0 +1,26 @@
+.m__nav
+    ul
+        display: flex
+        //justify-content: space-between
+        li
+            margin: 0 20px
+            a
+                color: $silver_light
+                font-size: 16px
+                text-transform: uppercase
+                transition: $transition
+                &:after
+                    content: ''
+                    display: block
+                    width: 0
+                    height: 2px
+                    background: $silver_light
+                    margin-top: 6px
+                    transition: $transition
+                &:hover
+                    color: $silver_dark
+                    &:after
+                        width: 100%
+            &:last-child
+                margin-right: 0
+
