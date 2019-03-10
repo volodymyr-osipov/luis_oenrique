@@ -1,0 +1,89 @@
+.skills
+	h2
+		width: 20%
+		margin-bottom: 60px
+.skill__board
+	display: block
+	max-width: 1024px
+	margin: 0 auto
+	background: $board_color
+	position: relative
+	
+.board__persent
+	display: flex
+	flex-direction: column
+	span
+		display: block
+		width: 100%
+		height: 2px
+		background: $board_line
+		margin-bottom: 60px
+		position: relative
+		&:before
+			content: '100%'
+			color: $silver_dark
+			font-size: 16px
+			position: absolute
+			top: -7px
+			left: -45px
+		&:nth-child(2)
+			&:before
+				content: '90%'
+		&:nth-child(3)
+			&:before
+				content: '80%'
+		&:nth-child(4)
+			&:before
+				content: '70%'
+		&:nth-child(5)
+			&:before
+				content: '60%'
+		&:nth-child(6)
+			&:before
+				content: '50%'
+
+.board__wave
+	display: block
+	width: 100%
+	height: 100%
+	background: url(../../img/bg_wave.png)
+	background-size: cover
+	background-repeat: no-repeat
+	position: absolute
+	top: 35px
+	left: 0px
+	z-index: 0
+	span
+		display: block
+		width: 12px
+		height: 12px
+		background: $board_skill
+		border-radius: 50%
+		position: absolute
+		&:nth-child(1)
+			top: 95px
+			left: 102px
+		&:nth-child(2)
+			top: 162px
+			left: 345px
+		&:nth-child(3)
+			top: -4px
+			right: 415px
+		&:nth-child(4)
+			top: 95px
+			right: 194px
+.board__logo
+	span
+		position: absolute
+		&:nth-child(1)
+			bottom: -35px
+			left: 100px
+		&:nth-child(2)
+			bottom: -35px
+			left: 340px
+		&:nth-child(3)
+			bottom: -35px
+			right: 410px
+		&:nth-child(4)
+			bottom: -35px
+			right: 185px
