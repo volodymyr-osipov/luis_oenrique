@@ -13,19 +13,23 @@
 .m__btn_bg
     background: $white
     box-shadow: $box_shadow
+    transition: $transition
     &:hover
         background: $silver_dark
+        box-shadow: none
         a
             color: $white
   	
 .m__btn_border
     border: 1px solid $silver_dark
+    box-shadow: $box_shadow
     &:hover
         background: $silver_dark
+        box-shadow: none
         a
             color: $white
 
-.btn__down
+.btn__arrow
     display: flex
     justify-content: center
     align-items: center
@@ -33,10 +37,10 @@
     height: 41px
     background: $white
     box-shadow: $box_shadow
-    margin-top: 168px
     transition: $transition
     &:hover
         background: $silver_dark
+        box-shadow: none
         svg
             polyline
                 stroke: $white    

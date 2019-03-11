@@ -1,0 +1,37 @@
+.portfolio
+	display: block
+	width: 100%
+	background: $bg_color
+	.m__btn_bg
+		width: 190px
+		margin: 0 auto
+
+.portfolio__img
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 30px
+	.portfolio__img_list
+		width: calc(33.3% - 20px)
+		margin: 10px
+		position: relative
+		transition: $transition
+		img
+			width: 100%
+		.btn__left
+			display: none
+			position: absolute
+			top: 50%
+			left: 50%
+			-webkit-transform: translate(-50%, -50%)
+			-moz-transform: translate(-50%, -50%)
+			-ms-transform: translate(-50%, -50%)
+			-o-transform: translate(-50%, -50%)
+			transform: translate(-50%, -50%)
+			transition: $transition
+		&:hover
+			box-shadow: 0px 25px 49px rgba(0, 0, 0, 0.4)
+			.btn__left
+				display: flex
+				
+			
+		
