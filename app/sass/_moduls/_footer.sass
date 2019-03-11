@@ -1,0 +1,134 @@
+.footer
+	display: block
+	width: 100%
+	background: url(../img/contact_bg.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 165px
+	h2
+		color: $white
+		&:before
+			background: $white
+.form
+	padding-bottom: 60px
+	&__list
+		display: flex
+		flex-direction: column
+		align-items: center
+		&_item
+			display: flex
+			justify-content: space-between
+			width: 768px
+			margin-bottom: 30px
+			input
+				outline: none
+				border: none
+				&[type="text"]
+					width: 370px
+					height: 57px
+					font-size: 16px
+					color: $silver_light
+					padding-left: 10px
+				&[type="submit"]
+					background: $white
+					width: 100%
+					height: 100%
+					font-size: 16px
+					text-transform: uppercase
+					color: $silver_light
+					font-weight: 800
+					box-shadow: $box_shadow
+					transition: $transition
+					padding-right: 10px
+					cursor: pointer
+					
+			textarea
+				width: 100%
+				height: 207px
+				font-size: 16px
+				color: $silver_light
+				padding: 10px
+.btn__form
+	display: flex
+	width: 123px
+	height: 50px
+	margin: 0 auto
+	position: relative
+	transition: $transition
+	cursor: pointer
+	&:after
+		content: ''
+		display: block
+		width: 15px
+		height: 13px
+		background: url(../img/send-button.png)
+		background-repeat: no-repeat
+		position: absolute
+		top: 52%
+		right: 15px
+		-webkit-transform: translateY(-50%)
+		-moz-transform: translateY(-50%)
+		-ms-transform: translateY(-50%)
+		-o-transform: translateY(-50%)
+		transform: translateY(-50%)
+		transition: $transition
+	&:hover
+		input
+			box-shadow: none
+		&:after
+			right: 10px
+
+.footer__end
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	width: 100%
+	padding: 30px 0
+	border-top: 1px solid $white
+	position: relative
+	
+.footer__social
+	display: flex
+	&_list
+		display: block
+		width: 27px
+		height: 27px
+		background: $white
+		margin-left: 10px
+		transition: $transition
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 100%
+			height: 100%
+			svg
+				fill: $silver_dark
+		&:first-child
+			margin-left: 0
+		&:hover
+			background: $blue
+			svg
+				fill: $white
+	.last__icon
+		&:hover
+			svg
+				circle, path
+					stroke: $white	
+						
+.footer__copi
+	position: absolute
+	top: 50%
+	left: 50%
+	-webkit-transform: translate(-50%, -50%)
+	-moz-transform: translate(-50%, -50%)
+	-ms-transform: translate(-50%, -50%)
+	-o-transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%)
+	p
+		color: $white
+		font-weight: 600
+		font-size: 16px
+		text-align: center
+		
+		
