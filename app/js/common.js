@@ -78,3 +78,10 @@ $(".go__down_c").click(function(){
 	$("html, body").animate({scrollTop: $("header").height()+ 5200 },"slow");
 return false;
 });
+
+$(function(){
+    $('.menu__link').click(function(){
+		$('.menu__link').removeClass('menu__link_active');			
+	    $(this).toggleClass('menu__link_active');
+    });
+});
