@@ -18,20 +18,18 @@
 		img
 			width: 100%
 		.btn__left
-			display: none
+			display: flex
+			opacity: 0
 			position: absolute
 			top: 50%
 			left: 50%
-			-webkit-transform: translate(-50%, -50%)
-			-moz-transform: translate(-50%, -50%)
-			-ms-transform: translate(-50%, -50%)
-			-o-transform: translate(-50%, -50%)
-			transform: translate(-50%, -50%)
+			transform: translate(-50%, 350%)
 			transition: $transition
 		&:hover
 			box-shadow: 0px 25px 49px rgba(0, 0, 0, 0.4)
 			.btn__left
-				display: flex
-				
+				opacity: 1
+				transform: translate(-50%, -50%)
+
 			
 		
