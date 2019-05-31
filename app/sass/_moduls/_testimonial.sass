@@ -1,11 +1,15 @@
 .testimonial
 
+.testimonial__wrap
+	padding: 0 15px
+
 .testimonial__slider
 	display: block
 	max-width: 954px
 	margin: 0 auto
 	border: 1px solid $silver_dark
-	padding: 120px 0
+	padding: 120px 
+
 .slider
 	&__items
 		display: flex
@@ -15,6 +19,7 @@
 		width: 159px
 		height: 159px
 		margin-right: 30px
+		overflow: hidden
 		img
 			width: 100%
 			filter: grayscale(100%)
@@ -36,6 +41,7 @@
 			text-transform: uppercase
 			color: $text_color
 			margin-top: 10px
+
 .testimonial__icons
 	display: flex
 	justify-content: center
@@ -48,7 +54,7 @@
 	flex-direction: column
 	align-items: center
 	justify-content: flex-end
-	margin: 100px
+	margin: 55px
 	span
 		display: block
 		margin-top: 15px

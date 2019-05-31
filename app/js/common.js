@@ -93,3 +93,13 @@ $(function() {
     offset: 200
   }).init();
 });
+
+$(function() {
+	var btnMenu = $('.btn__menu');
+	var menu = $('.header__mobile');
+	
+	btnMenu.click(function () {
+		btnMenu.toggleClass('activ__btn');
+		menu.toggleClass('active__menu');
+	});
+});

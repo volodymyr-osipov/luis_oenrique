@@ -1,10 +1,35 @@
-@import "vars"
 
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width : 1190px)
+	//header
+	.content__img
+		width: 40%
+	.content__text_list
+		h1
+			font-size: 60px
+			margin-left: 0
+		p
+        	font-size: 18px
+	.header__content
+		.btn__down
+			margin-top: 80px
+	
+	
+	//testimonial
+	.testimonial__icons
+		flex-wrap: wrap
+	//portfolio
+	.portfolio__img 
+		.portfolio__img_list
+			width: calc(50% - 20px)
+	
+	//footer
+	.footer__end
+		justify-content: space-between
+	.footer__copi
+		margin-left: 0
 
 
 /* Medium Devices, Desktops */
@@ -14,13 +39,93 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	//header
+
+	.header__nav
+		.m__nav
+			display: none
+		.btn__menu
+			display: flex
+	.content__text
+		position: absolute
+		top: 30%
+	.content__img
+		width: 100%
+		img
+			width: 100%
+	//about
+	.about
+		padding: 0
+	.about__wrap
+		flex-direction: column
+		.about__list 
+			width: 100%
+			margin-bottom: 40px
+			&:last-child
+				margin-bottom: 0
+			img
+				width: 100%
+	//portfolio
+	.portfolio__img 
+		.portfolio__img_list
+			width: 100%
+		
+	//services
+	.services__icon_list
+		width: calc(50% - 10px)
+	//slider
+	.slider
+		padding: 120px 50px
+		&__desc
+			width: 90%
+	//form
+	.form
+		width: 100%
+	.form__list_item
+		flex-direction: column
+		input[type=text]
+			width: 100%
+			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
+	.btn__form
+		width: 100%	
+		&:after
+			display: none
+	
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	h2
+		font-size: 36px
+	//header
 
+	//services
+	.services__icon_list
+		width: 100%
+		margin: 20px
+	
+	//.slider
+	.slider
+		padding: 50px 15px
+		&__items
+			flex-direction: column
+		&__desc
+			width: 100%
+		&__img
+			width: 100%
+			height: 300px
+			margin-right: 0
+			margin-bottom: 20px
+			img
+				width: 100%
+
+	//footer
+	.footer__end
+		flex-direction: column
+		.footer__copi
+			margin-top: 10px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

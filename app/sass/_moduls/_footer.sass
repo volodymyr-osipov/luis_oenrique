@@ -11,6 +11,8 @@
 		&:before
 			background: $white
 .form
+	width: 65%
+	margin: 0 auto
 	padding-bottom: 60px
 	&__list
 		display: flex
@@ -19,13 +21,13 @@
 		&_item
 			display: flex
 			justify-content: space-between
-			width: 768px
-			margin-bottom: 30px
+			width: 100%
+			margin-bottom: 20px
 			input
 				outline: none
 				border: none
 				&[type="text"]
-					width: 370px
+					width: calc(50% - 10px)
 					height: 57px
 					font-size: 16px
 					color: $silver_light
@@ -118,14 +120,7 @@
 					stroke: $white	
 						
 .footer__copi
-	position: absolute
-	top: 50%
-	left: 50%
-	-webkit-transform: translate(-50%, -50%)
-	-moz-transform: translate(-50%, -50%)
-	-ms-transform: translate(-50%, -50%)
-	-o-transform: translate(-50%, -50%)
-	transform: translate(-50%, -50%)
+	margin-left: 300px
 	p
 		color: $white
 		font-weight: 600
