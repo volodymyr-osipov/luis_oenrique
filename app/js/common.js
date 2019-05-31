@@ -85,3 +85,11 @@ $(function(){
 	    $(this).toggleClass('menu__link_active');
     });
 });
+
+
+//animation
+$(function() {
+  new WOW({
+    offset: 200
+  }).init();
+});
