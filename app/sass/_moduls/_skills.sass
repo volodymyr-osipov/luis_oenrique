@@ -52,13 +52,33 @@
 	top: 35px
 	left: 0px
 	z-index: 0
-	span
+	&-list
 		display: block
 		width: 12px
 		height: 12px
 		background: $board_skill
 		border-radius: 50%
 		position: absolute
+		transition: all .5s linear
+		span
+			display: block
+			width: 100%
+			height: 100%
+			background: transparent
+			border: 1px solid $blue_dark
+			border-radius: 100%
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			animation: animSpan 6s linear infinite
+			&:nth-child(1)
+				animation-delay: 0s
+			&:nth-child(2)
+				animation-delay: -2s
+			&:nth-child(3)
+				animation-delay: -4s
+
 		&:nth-child(1)
 			top: 95px
 			left: 102px
@@ -86,3 +106,15 @@
 		&:nth-child(4)
 			bottom: -35px
 			right: 185px
+
+
+
+@keyframes animSpan
+	0%
+		width: 12px
+		height: 12px
+		opacity: 1
+	100%
+		width: 60px
+		height: 60px
+		opacity: 0
