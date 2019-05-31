@@ -1,11 +1,11 @@
 .header
     display: flex
     width: 100%
-    height: 750px
     background: url(../img/bg.jpg)
     background-repeat: no-repeat
     background-size: cover
     background-attachment: fixed
+    padding: 30px 0 
 .header__wrapp
     display: flex
     flex-direction: column
@@ -14,7 +14,6 @@
     display: flex
     width: 100%
     justify-content: space-between
-    margin-top: 30px
 
 .logo
     margin-left: -25px
@@ -63,3 +62,32 @@
 
 .btn__down
     margin-top: 168px
+
+.header__mobile
+    display: none
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100vh
+    background: $silver_light
+    position: fixed
+    left: -150%
+    top: 0
+    z-index: 15
+    transition: all .3s linear
+    .menu__mobile
+        ul
+            li
+                margin: 20px 0
+                a.menu__link
+                    text-transform: uppercase
+                    color: $white
+                    font-size: 22px
+                    transition: all .3s linear
+                    &:hover
+                        color: $blue
+.active__menu
+    display: flex
+    left: 0
+    transition: all .3s linear
+    
