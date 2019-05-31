@@ -15,6 +15,7 @@
 		margin: 10px
 		position: relative
 		transition: $transition
+		perspective: 1000px
 		img
 			width: 100%
 		.btn__left
@@ -30,6 +31,11 @@
 			.btn__left
 				opacity: 1
 				transform: translate(-50%, -50%)
+			.desc__site
+				top: 10px
+				opacity: 1
+				transform: rotateX(0deg) 
+
 		&:nth-child(2)
 			animation-delay: 0.2s
 		&:nth-child(3)
